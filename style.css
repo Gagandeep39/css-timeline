@@ -5,6 +5,10 @@ body {
   padding: 0;
   font-family: 'Montserrat', sans-serif;
 }
+h1 {
+  text-align: center;
+  margin-bottom: 0;
+}
 
 .timeline {
   position: relative;
