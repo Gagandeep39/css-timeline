@@ -14,6 +14,16 @@ body {
   width: 1000px;
 }
 
+/* Adds a vertical line */
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  height: 100%;
+  width: 2px;
+  background: #c5c5c5;
+}
+
 .timeline ul {
   margin: 0;
   padding: 0;
@@ -25,4 +35,23 @@ body {
   width: 50%;
   padding: 20px 40px;
   box-sizing: border-box;
+}
+
+/* Text Alighns odd child to right  */
+.timeline ul li:nth-child(odd) {
+  float: left;
+  text-align: right;
+  /* Ensures no other elemnt is present on same line */
+  clear: both;
+}
+
+.timeline ul li:nth-child(even) {
+  float: right;
+  text-align: left;
+  /* Ensures no other elemnt is present on same line */
+  clear: both;
+}
+
+.content {
+  padding-bottom: 20px;
 }
