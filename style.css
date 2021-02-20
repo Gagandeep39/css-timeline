@@ -131,3 +131,24 @@ body {
   }
 }
 
+@media (max-width: 7670px) {
+  .timeline {
+    width: 100%;
+  }
+  h1 {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  /* Moves timeline line to left */
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline li:nth-child(odd),
+  .timeline li:nth-child(even) {
+    width: 100%;
+    text-align: left;
+    padding-left: 50px;
+  }
+}
